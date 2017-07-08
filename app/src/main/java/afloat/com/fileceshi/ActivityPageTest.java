@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.baidu.mobstat.StatService;
 
@@ -16,17 +17,25 @@ import com.baidu.mobstat.StatService;
  */
 
 public class ActivityPageTest extends Activity{
-
+    private Button onEventButton;
     private Button mButton;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_page_test);
         mButton = (Button) findViewById(R.id.page_exit);
+        onEventButton = (Button) findViewById(R.id.button1);
         initView();
     }
 
     private void initView() {
+        onEventButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(ActivityPageTest.this, "测试", Toast.LENGTH_LONG).show();
+                StatService.onEvent(ActivityPageTest.this, "button", "ceshi");
+            }
+        });
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

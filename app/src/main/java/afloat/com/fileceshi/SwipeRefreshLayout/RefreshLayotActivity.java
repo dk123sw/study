@@ -45,7 +45,7 @@ import afloat.com.fileceshi.R;
                     public void run() {
                         swipeLayout.setRefreshing(false);
                         list.add(new SoftwareClassificationInfo(2, "ass"));
-                        adapter.notifyDataSetChanged();
+//                        adapter.notifyDataSetChanged();
                         isRefresh = false;
                     }
                 }, 3000);

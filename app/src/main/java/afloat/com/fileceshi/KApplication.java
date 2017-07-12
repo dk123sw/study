@@ -22,8 +22,7 @@ import android.util.Log;
 
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
-import com.sina.weibo.sdk.WbSdk;
-import com.sina.weibo.sdk.auth.AuthInfo;
+import com.hyphenate.easeui.controller.EaseUI;
 import com.umeng.socialize.PlatformConfig;
 import com.umeng.socialize.UMShareAPI;
 
@@ -73,8 +72,8 @@ public class KApplication extends Application {
         initEasemob();
         //微信
         setmShareManager(WechatShareManager.getInstance(mContext));
-        WbSdk.install(this, new AuthInfo(mContext, Constant.APP_KEY, Constant.REDIRECT_URL,
-                Constant.SCOPE));
+//        WbSdk.install(this, new AuthInfo(mContext, Constant.APP_KEY, Constant.REDIRECT_URL,
+//                Constant.SCOPE));
     }
 
     {
@@ -97,7 +96,7 @@ public class KApplication extends Application {
     }
 
     /**
-     *
+     *  环信集成
      */
     private void initEasemob() {
         // 获取当前进程 id 并取得进程名
@@ -146,6 +145,8 @@ public class KApplication extends Application {
 
         // 调用初始化方法初始化sdk
         EMClient.getInstance().init(mContext, options);
+        //EaseUI初始化
+        EaseUI.getInstance().init(mContext , options);
 
         // 设置开启debug模式
         EMClient.getInstance().setDebugMode(true);

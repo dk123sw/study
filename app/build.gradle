@@ -10,6 +10,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+//        ndk{
+//            moduleName "libweibosdkcore"
+//            abiFilters "arm64-v8a", "armeabi-v7a", "x86"
+//        }
     }
 
     //       微信 signingConfigs 签名 使用时要在APP文件下生成签名先
@@ -46,9 +50,11 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile files('libs/Baidu_Mtj_3.8.0.2.jar')
-    compile 'com.sina.weibo.sdk:core:2.0.3:openDefaultRelease@aar'
+    compile project(':easeui')
+//    compile 'com.sina.weibo.sdk:core:2.0.3:openDefaultRelease@aar'
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    compile 'com.android.support:design:25.3.1'
     testCompile 'junit:junit:4.12'
 }

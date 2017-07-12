@@ -9,8 +9,10 @@ import android.widget.Button;
 import com.baidu.mobstat.StatService;
 
 import afloat.com.fileceshi.SwipeRefreshLayout.RefreshLayotActivity;
+import afloat.com.fileceshi.huanxin.ECMainActivity;
 import afloat.com.fileceshi.share.ShareActivity;
 import afloat.com.fileceshi.umshare.UmengActivity;
+
 
 public class MainActivity extends Activity implements View.OnClickListener{
 
@@ -59,7 +61,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 startActivity(intent3);
                 break;
             case R.id.button5:
-
+                Intent intent4 = new Intent(MainActivity.this , ECMainActivity.class);
+                startActivity(intent4);
                 break;
         }
     }

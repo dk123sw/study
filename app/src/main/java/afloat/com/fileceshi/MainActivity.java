@@ -9,43 +9,45 @@ import android.widget.Button;
 import com.baidu.mobstat.StatService;
 
 import afloat.com.fileceshi.SwipeRefreshLayout.RefreshLayotActivity;
+import afloat.com.fileceshi.function.functionActivity;
 import afloat.com.fileceshi.huanxin.ECMainActivity;
 import afloat.com.fileceshi.share.ShareActivity;
 import afloat.com.fileceshi.umshare.UmengActivity;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 
-public class MainActivity extends Activity implements View.OnClickListener{
+public class MainActivity extends Activity {
 
-    private Button mButton1;
-    private Button mButton2;
-    private Button mButton3;
-    private Button mButton4;
-    private Button mButton5;
+    @BindView(R.id.button1)
+    Button mButton1;
+    @BindView(R.id.button2)
+    Button mButton2;
+    @BindView(R.id.button3)
+    Button mButton3;
+    @BindView(R.id.button4)
+    Button mButton4;
+    @BindView(R.id.button5)
+    Button mButton5;
+    @BindView(R.id.button6)
+    Button mButton6;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
         StatService.setDebugOn(true);
         StatService.start(this);
-        mButton1 = (Button) findViewById(R.id.button1);
-        mButton2 = (Button) findViewById(R.id.button2);
-        mButton3 = (Button) findViewById(R.id.button3);
-        mButton4 = (Button) findViewById(R.id.button4);
-        mButton5 = (Button) findViewById(R.id.button5);
-        mButton1.setOnClickListener(this);
-        mButton2.setOnClickListener(this);
-        mButton3.setOnClickListener(this);
-        mButton4.setOnClickListener(this);
-        mButton5.setOnClickListener(this);
     }
 
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
+    @OnClick({R.id.button1, R.id.button2, R.id.button3, R.id.button4, R.id.button5 , R.id.button6})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
             case R.id.button1:
-                Intent intent = new Intent(MainActivity.this , UmengActivity.class);
+                Intent intent = new Intent(MainActivity.this, UmengActivity.class);
                 startActivity(intent);
                 break;
             case R.id.button2:
@@ -53,17 +55,22 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 startActivity(intent1);
                 break;
             case R.id.button3:
-                Intent intent2 = new Intent(MainActivity.this ,ShareActivity.class);
+                Intent intent2 = new Intent(MainActivity.this, ShareActivity.class);
                 startActivity(intent2);
                 break;
             case R.id.button4:
-                Intent intent3 = new Intent(MainActivity.this , RefreshLayotActivity.class);
+                Intent intent3 = new Intent(MainActivity.this, RefreshLayotActivity.class);
                 startActivity(intent3);
                 break;
             case R.id.button5:
-                Intent intent4 = new Intent(MainActivity.this , ECMainActivity.class);
+                Intent intent4 = new Intent(MainActivity.this, ECMainActivity.class);
                 startActivity(intent4);
+                break;
+            case R.id.button6:
+                Intent intent5 = new Intent(MainActivity.this , functionActivity.class);
+                startActivity(intent5);
                 break;
         }
     }
+
 }

@@ -12,4 +12,10 @@
         android:text="暂时没空，闲下来在写"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
+    <Button
+        android:text="微信分享"
+        android:id="@+id/umeng_share_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </LinearLayout>

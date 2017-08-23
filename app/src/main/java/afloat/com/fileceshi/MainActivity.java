@@ -8,7 +8,12 @@ import android.widget.Button;
 
 import com.baidu.mobstat.StatService;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import afloat.com.fileceshi.SwipeRefreshLayout.RefreshLayotActivity;
+import afloat.com.fileceshi.function.MessageEvent;
 import afloat.com.fileceshi.function.functionActivity;
 import afloat.com.fileceshi.huanxin.ECMainActivity;
 import afloat.com.fileceshi.share.ShareActivity;
@@ -41,6 +46,7 @@ public class MainActivity extends Activity {
         ButterKnife.bind(this);
         StatService.setDebugOn(true);
         StatService.start(this);
+        EventBus.getDefault().register(this);
     }
 
     @OnClick({R.id.button1, R.id.button2, R.id.button3, R.id.button4, R.id.button5 , R.id.button6})
@@ -73,4 +79,20 @@ public class MainActivity extends Activity {
         }
     }
 
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEventBusS(MessageEvent messageEvent){
+        mButton6.setText(messageEvent.getMessage());
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mButton6.setText("小功能小问题测试");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
+    }
 }

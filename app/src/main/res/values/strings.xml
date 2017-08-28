@@ -2,6 +2,7 @@
     <string name="app_name">fileceshi</string>
     <string name="people_read1">百度移动统计的对某一事件监听OnEvent方法</string>
     <string name="people_read2">百度移动统计对页面等长时间操作的监听,已经直接写在活动里</string>
+    <string name="people_read3">百度统计和友盟统计包冲突不能写在同一个app里</string>
     <string name="title_activity_login">Sign in</string>
 
     <string name="shareActivity_read">环信libs包与新浪分享冲突，故先注解掉新浪分享功能</string>

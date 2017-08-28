@@ -10,9 +10,9 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.Toast;
 
-//import com.sina.weibo.sdk.auth.Oauth2AccessToken;
-
 import afloat.com.fileceshi.R;
+
+//import com.sina.weibo.sdk.auth.Oauth2AccessToken;
 
 public class ShareActivity extends Activity implements View.OnClickListener,PopupWindow.OnDismissListener{
 
@@ -111,6 +111,15 @@ public class ShareActivity extends Activity implements View.OnClickListener,Popu
         } catch (Exception e) {
             return false;
         }
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
     }
 
 //    /**

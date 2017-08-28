@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
 import com.hyphenate.easeui.ui.EaseChatFragment;
+import com.umeng.analytics.MobclickAgent;
 
 import afloat.com.fileceshi.R;
 
@@ -27,6 +28,17 @@ public class ChatActivity extends FragmentActivity {
     }
     public void myOnClick() {
 
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 
 }

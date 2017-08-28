@@ -238,4 +238,13 @@ public class loginActivity extends Activity {
             }
         });
     }
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
 }

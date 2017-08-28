@@ -64,4 +64,13 @@ public class UmengActivity extends Activity {
     public void onViewClicked() {
         initUmeng();
     }
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
 }

@@ -68,6 +68,8 @@ dependencies {
     compile 'com.marshalchen.ultimaterecyclerview:library:0.7.2'
     compile 'com.jakewharton:butterknife:8.7.0'
     compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.github.vondear:RxTools:v1.7.3.4'
     testCompile 'junit:junit:4.12'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.7.0'
 }

@@ -51,5 +51,14 @@ import afloat.com.fileceshi.R;
                 }, 3000);
             }
         }
+        @Override
+        protected void onResume() {
+            super.onResume();
+        }
+
+        @Override
+        protected void onPause() {
+            super.onPause();
+        }
     }
 

@@ -37,6 +37,12 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.GET_TASKS"/>
 
+    <!-- 友盟统计权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
     <!-- 环信Required -->
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -90,6 +96,9 @@
             android:name="UMENG_APPKEY"
             android:value="595c8ad08630f56f63001980">
         </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="default"/>
 
         <!-- 您从百度网站获取的APP KEY，根据实际您的APP申请的APP_KEY进行修改 -->
         <meta-data
@@ -209,6 +218,10 @@
         <activity android:name=".function.ZxingActivity">
         </activity>
         <activity android:name=".function.EventBusActivity">
+        </activity>
+        <activity android:name=".function.EditTextActivity">
+        </activity>
+        <activity android:name=".function.CheckRefeshActivity">
         </activity>
     </application>
 

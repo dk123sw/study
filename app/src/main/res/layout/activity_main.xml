@@ -52,7 +52,14 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:text="小功能小问题测试"/>
-
+        android:text="功能问题测试"/>
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="自启动管理"/>
 
 </LinearLayout>

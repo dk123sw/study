@@ -233,4 +233,9 @@ public class ECChatActivity extends AppCompatActivity implements EMMessageListen
     @Override
     public void onMessageChanged(EMMessage message, Object object) {
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
 }

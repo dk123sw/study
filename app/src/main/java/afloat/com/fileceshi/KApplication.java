@@ -9,8 +9,10 @@ import com.blankj.utilcode.util.Utils;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
 import com.hyphenate.easeui.controller.EaseUI;
+import com.umeng.analytics.MobclickAgent;
 import com.umeng.socialize.PlatformConfig;
 import com.umeng.socialize.UMShareAPI;
+import com.vondear.rxtools.RxUtils;
 
 import java.util.Iterator;
 import java.util.List;
@@ -56,6 +58,8 @@ public class KApplication extends Application {
         mContext = getApplicationContext();
         Utils.init(mContext);
         UMShareAPI.get(this);
+        MobclickAgent.setDebugMode(true);
+        RxUtils.init(this);
         initEasemob();
         //微信
         setmShareManager(WechatShareManager.getInstance(mContext));

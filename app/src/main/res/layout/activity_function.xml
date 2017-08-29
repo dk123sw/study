@@ -38,5 +38,10 @@
             android:id="@+id/checkrefresh_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+        <Button
+            android:text="富文本显示"
+            android:id="@+id/richEditText_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 </LinearLayout>

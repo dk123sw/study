@@ -7,7 +7,6 @@
 
     <string name="shareActivity_read">环信libs包与新浪分享冲突，故先注解掉新浪分享功能</string>
 
-
     <!-- 友盟提供平台名称 -->
     <string name="umeng_socialize_text_tencent_key">腾讯微博</string>
     <string name="umeng_socialize_text_wenxin_fav">微信收藏</string>
@@ -59,4 +58,5 @@
     <string name="umeng_socialize_text_dingding_key">钉钉</string>
     <string name="umeng_socialize_text_vkontakte_key">VKontakte</string>
     <string name="umeng_socialize_text_dropbox_key">DropBox</string>
+
 </resources>

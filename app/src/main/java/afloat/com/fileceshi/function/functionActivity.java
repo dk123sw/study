@@ -24,6 +24,8 @@ public class functionActivity extends Activity {
     Button mEventbusTest;
     @BindView(R.id.checkrefresh_test)
     Button mCheckrefreshTest;
+    @BindView(R.id.richEditText_test)
+    Button mRichEditTextTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +35,7 @@ public class functionActivity extends Activity {
     }
 
 
-    @OnClick({R.id.status_test, R.id.tool_test, R.id.guide_test, R.id.eventbus_test,R.id.checkrefresh_test})
+    @OnClick({R.id.status_test, R.id.tool_test, R.id.guide_test, R.id.eventbus_test, R.id.checkrefresh_test,R.id.richEditText_test})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.status_test:
@@ -54,8 +56,12 @@ public class functionActivity extends Activity {
                 startActivity(intent3);
                 break;
             case R.id.checkrefresh_test:
-                Intent intent4 = new Intent(this ,CheckRefeshActivity.class);
+                Intent intent4 = new Intent(this, CheckRefeshActivity.class);
                 startActivity(intent4);
+                break;
+            case R.id.richEditText_test:
+                Intent intent5 = new Intent(this, RichEditActivity.class);
+                startActivity(intent5);
                 break;
         }
     }

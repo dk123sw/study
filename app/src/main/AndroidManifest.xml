@@ -223,6 +223,8 @@
         </activity>
         <activity android:name=".function.CheckRefeshActivity">
         </activity>
+        <activity android:name=".function.RichEditActivity">
+        </activity>
     </application>
 
 </manifest>

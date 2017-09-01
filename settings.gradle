@@ -1,1 +1,1 @@
-include ':app', ':easeui','guideview'
+include ':app', ':easeui', 'guideview', ':X5WebDemo'

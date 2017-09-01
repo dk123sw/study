@@ -13,33 +13,33 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <Button
-            android:text="状态栏测试"
+            android:text="@string/status_test"
             android:id="@+id/status_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
-            android:text="工具类测试"
+            android:text="@string/tool_test"
             android:id="@+id/tool_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
-            android:text="引导蒙层测试"
+            android:text="@string/lead_test"
             android:id="@+id/guide_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <Button
-            android:text="EventBus"
+            android:text="@string/eventbus"
             android:id="@+id/eventbus_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
-            android:text="检查更新"
+            android:text="@string/check_test"
             android:id="@+id/checkrefresh_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
-            android:text="富文本显示"
+            android:text="@string/rich_appear"
             android:id="@+id/richEditText_test"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>

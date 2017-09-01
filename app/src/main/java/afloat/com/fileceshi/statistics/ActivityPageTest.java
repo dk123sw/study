@@ -1,4 +1,4 @@
-package afloat.com.fileceshi;
+package afloat.com.fileceshi.statistics;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.baidu.mobstat.StatService;
+
+import afloat.com.fileceshi.MainActivity;
+import afloat.com.fileceshi.R;
 
 /**
  * Created by hst028 on 2017/6/28.

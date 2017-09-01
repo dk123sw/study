@@ -35,7 +35,7 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:gravity="center"
-            android:text="分享界面"
+            android:text="@string/share"
             android:textSize="16dp" />
 
         <ImageView

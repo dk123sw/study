@@ -18,6 +18,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import afloat.com.fileceshi.share.WechatShareManager;
+import afloat.com.fileceshi.statistics.UmengUtils;
 
 /**
  * Application类，应用级别的操作都放这里
@@ -57,6 +58,7 @@ public class KApplication extends Application {
 //        appAction = new AppActionImpl(this);
         mContext = getApplicationContext();
         Utils.init(mContext);
+        UmengUtils.initUmeng();
         UMShareAPI.get(this);
         MobclickAgent.setDebugMode(true);
         RxUtils.init(this);

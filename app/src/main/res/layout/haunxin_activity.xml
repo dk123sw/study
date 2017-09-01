@@ -19,18 +19,18 @@
             android:id="@+id/ec_edit_chat_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="对方的username"/>
+            android:hint="@string/other_name"/>
 
         <Button
             android:id="@+id/ec_btn_start_chat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="发起聊天"/>
+            android:text="@string/send_talk"/>
 
         <Button
             android:id="@+id/ec_btn_sign_out"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="退出登录"/>
+            android:text="@string/exit_logout"/>
     </LinearLayout>
 </RelativeLayout>

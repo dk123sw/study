@@ -59,4 +59,25 @@
     <string name="umeng_socialize_text_vkontakte_key">VKontakte</string>
     <string name="umeng_socialize_text_dropbox_key">DropBox</string>
 
+    <string name="button1">利用友盟实现三方分享、授权登录</string>
+    <string name="button2">百度移动统计,友盟统计页面测试</string>
+    <string name="button3">微信和新浪分享界面</string>
+    <string name="button4">下拉刷新自定义界面</string>
+    <string name="button5">环信集成测试</string>
+    <string name="button6">功能问题测试</string>
+    <string name="button7">自启动管理</string>
+    <string name="status_test">状态栏测试</string>
+    <string name="tool_test">工具类测试</string>
+    <string name="lead_test">引导蒙层测试</string>
+    <string name="eventbus">EventBus</string>
+    <string name="check_test">检查更新</string>
+    <string name="rich_appear">富文本显示</string>
+    <string name="wx_share">微信分享</string>
+    <string name="onevent_test">OnEvent测试</string>
+    <string name="exit">exit</string>
+    <string name="share">分享界面</string>
+    <string name="other_name">对方的username</string>
+    <string name="send_talk">发起聊天</string>
+    <string name="exit_logout">退出登录</string>
+    <string name="exitText_content">不开启这个自启动权限会出一堆问题,三方系统像小米，华为这种如果不开。程序一但关闭服务就会被杀掉。极光推送啥的直接完蛋，所以网上会用多种推送一起或者直接用小米推送的啦</string>
 </resources>

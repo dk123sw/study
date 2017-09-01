@@ -30,6 +30,7 @@ import afloat.com.fileceshi.function.MessageEvent;
 import afloat.com.fileceshi.function.functionActivity;
 import afloat.com.fileceshi.huanxin.ECMainActivity;
 import afloat.com.fileceshi.share.ShareActivity;
+import afloat.com.fileceshi.statistics.ActivityPageTest;
 import afloat.com.fileceshi.umshare.UmengActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -192,7 +193,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onStart() {
         super.onStart();
-        mButton6.setText("小功能小问题测试");
+        mButton6.setText(getResources().getString(R.string.button6));
     }
 
     @Override
